@@ -13,12 +13,11 @@ async def test(request):
     template = open(os.getcwd()+"/templates/index.html")
     return html(template.read())
 
-@app.route("/music")
-async def test(request):
-    return json({"myfavorite":"music"})
+
+
 
 if __name__=="__main__":
-    app.run(host ="0.0.0.0",port=9000)
+    app.run(host ="0.0.0.0",port=8000, debug=True)
 
 
 
